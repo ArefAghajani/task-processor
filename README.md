@@ -135,7 +135,7 @@ go test -race ./...
 * Error handling
 * Goroutines
 * Channels
-* `sync.WaitGroup`
+* sync.WaitGroup
 * Worker Pool pattern
 * Basic unit testing
 * CLI flags
@@ -145,12 +145,9 @@ go test -race ./...
 Some possible improvements:
 
 * Add task retry support
-* Add graceful shutdown with `context`
+* Add graceful shutdown with context
 * Add task processing time
 * Add better logging
 * Add task priorities
 * Add configurable retry limits
 
-## License
-
-This project is for learning and experimentation with Go concurrency.
