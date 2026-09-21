@@ -3,6 +3,7 @@ package worker
 import (
 	"errors"
 	"fmt"
+	"time"
 
 	"task-processor/task"
 )
@@ -18,6 +19,7 @@ func (p SimpleProcessor) Process(t task.Task) error {
 		return errors.New("task name is not defined")
 	}
 
+	time.Sleep(500 * time.Millisecond)
 	return nil
 }
 
